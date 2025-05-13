@@ -54,65 +54,14 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Parameter1]
-Name=traitement
-Value=4	
-
-[Parameter2]
-Name=Tolerance
-Value=5
-
-[Parameter3]
-Name=test1
-Value=11
-
-[Parameter4]
-Name=poids
-Value=55
-
-[Parameter5]
-Name=PlanN°
-Value=5
-
-[Parameter6]
-Name=numcode
-Value=582396C
-
-[Parameter7]
-Name=ndfts
-Value=50399
-
-[Parameter8]
-Name=matière
-Value=555
-
-[Parameter9]
-Name=Echelle
-Value=55
-
-[Parameter10]
-Name=dessiné
-Value=M.CHAMLALI
-
-[Parameter11]
-Name=DessinN°
-Value=50397
-
 [Parameter12]
 Name=Designation
-Value=CARTE DE COMMUNICATION
+Value=custom project name
 
 [Parameter13]
 Name=Date
-Value=03/2021
+Value=05/2025
 
-[Parameter14]
-Name=approuvé
-Value=M.CHAMLALI
-
-[Parameter15]
-Name=Affectations
-Value=RB 33 ,35, 2033 , 2035 standard et VA
 
 [Generic_ScriptingSystem]
 StartProcName=Prj-Parameters.pas>
