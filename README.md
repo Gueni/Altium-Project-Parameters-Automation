@@ -1,69 +1,25 @@
-# Altium Project Parameters Automation Script
+# Altium Project Parameters Script
 
-This repository provides a **Delphi (Pascal)** script for **Altium Designer** that automates the process of importing and managing **project-level parameters** from a `.txt` file.
+Altium Designer script project (`Script_Project.PrjScr`) for exporting a
+project's parameters to a text file. `test.txt` is a sample of the output: one
+`Name;Value` line per project parameter, here `Date;05/2025` and
+`Designation;custom project name`, which are the parameters defined in the
+script project itself.
 
----
+> The script the project points to, `Prj-Parameters.pas` (set as
+> `StartProcName=Prj-Parameters.pas>`), is **not in this repository**. Add it
+> next to `Script_Project.PrjScr` before running the project.
 
-## Features
+## Repository layout
 
-- Automatically **adds or updates** project parameters in the focused Altium project.
-- Supports importing from a simple `key;value` formatted `.txt` file.
-- Displays feedback for each added or updated parameter.
-- Easy to customize or extend.
+```
+0011_altium_params/
+├── Script_Project.PrjScr   # Altium script project (expects Prj-Parameters.pas)
+└── test.txt                # Example output
+```
 
----
+## Usage
 
-## Requirements
-
-- Altium Designer (tested with 20.x+)
-- Script engine enabled (`.pas` scripting)
-- Active, focused project in Altium
-
----
-
-## Input Format
-
-The input file should be a plain text file (`.txt`) with each line containing:
-
-
-### Example:
-
-Author;name 
-ProjectName;STM32F373 Relay Control Board
-Revision;1.1
-Date;2025-05-13
-
----
-
-## How to Use
-
-1. Open **Altium Designer**.
-2. Go to **DXP > Run Script**.
-3. Load the `.pas` file provided in this repo.
-4. When prompted, select your `.txt` file containing the parameters.
-5. Script will:
-   - Update existing parameters if value differs
-   - Add new parameters if not found
-6. You’ll see `ShowMessage` confirmations for each action.
-
----
-
-## File Structure
-
-AltiumProjectParamScript
-
-    ├── prj.pas # Main script
-
-    └── README.md # This file
-
-
----
-
-## Customization Tips
-
-- Increase array size if you expect more than 100 parameters.
-- Replace `ShowMessage` with logging to a file or status panel.
-- Add support for `.csv`, `.json`, or GUI dialogs if needed.
-
-
----
+1. Put `Prj-Parameters.pas` next to `Script_Project.PrjScr`.
+2. In Altium Designer, open `Script_Project.PrjScr`.
+3. Run it from **File » Run Script** and pick the procedure in `Prj-Parameters.pas`.

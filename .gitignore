@@ -1,0 +1,22 @@
+# Altium
+History/
+**/History/
+__Previews/
+Project Logs for */
+*.PrjScrStructure
+*.$$$
+*.~*
+~$*
+*.bak
+*.Bak
+*.BAK
+*.lck
+*.LOG
+*.tmp
+
+# OS / editor
+desktop.ini
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
